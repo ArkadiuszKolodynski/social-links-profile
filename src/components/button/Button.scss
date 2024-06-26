@@ -1,0 +1,23 @@
+@use "../../styles/colors" as c;
+
+.button {
+  background-color: c.$color-grey;
+  color: c.$color-white;
+  padding: 10px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 280px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+
+  &:hover {
+    color: c.$color-dark-grey;
+    background-color: c.$color-primary;
+  }
+}

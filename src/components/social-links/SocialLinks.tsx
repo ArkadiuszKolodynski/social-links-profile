@@ -1,4 +1,5 @@
 import avatar from "../../assets/images/avatar-jessica.jpeg";
+import Button from "../button/Button";
 import "./SocialLinks.scss";
 
 function SocialLinks() {
@@ -21,7 +22,7 @@ function SocialLinks() {
       <ul id="social-links-list">
         {socialLinks.map((link) => (
           <li key={link}>
-            <a href="#">{link}</a>
+            <Button socialLink={link} />
           </li>
         ))}
       </ul>
