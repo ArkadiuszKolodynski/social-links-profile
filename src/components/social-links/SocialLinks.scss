@@ -1,8 +1,8 @@
-@import "../../styles/colors";
+@use "../../styles/colors" as c;
 
 #social-links {
   text-align: center;
-  background-color: $color-dark-grey;
+  background-color: c.$color-dark-grey;
   border-radius: 10px;
   padding: 40px 20px;
   line-height: 1;
@@ -18,7 +18,7 @@
   h1 {
     margin: 0;
     padding: 5px;
-    color: $color-white;
+    color: c.$color-white;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -26,7 +26,7 @@
   h2 {
     margin: 0;
     padding: 5px;
-    color: $color-primary;
+    color: c.$color-primary;
     font-size: 0.7rem;
     font-weight: 500;
   }
