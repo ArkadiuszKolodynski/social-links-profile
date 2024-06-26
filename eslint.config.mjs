@@ -24,7 +24,9 @@ export default [
     compat.extends(
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:react-hooks/recommended"
+      "plugin:react-hooks/recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime"
     )
   ),
   {
@@ -44,6 +46,13 @@ export default [
           allowConstantExport: true,
         },
       ],
+    },
+  },
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
     },
   },
 ];
