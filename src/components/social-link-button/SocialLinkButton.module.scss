@@ -1,8 +1,8 @@
-@use "../../styles/colors" as c;
+@use "../../styles/colors" as *;
 
-.button {
-  background-color: c.$color-grey;
-  color: c.$color-white;
+.social-link-button {
+  background-color: $color-grey;
+  color: $color-white;
   padding: 10px;
   display: block;
   border: none;
@@ -17,7 +17,7 @@
   text-decoration: none;
 
   &:hover {
-    color: c.$color-dark-grey;
-    background-color: c.$color-primary;
+    color: $color-dark-grey;
+    background-color: $color-primary;
   }
 }

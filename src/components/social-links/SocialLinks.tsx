@@ -1,6 +1,6 @@
 import avatar from "../../assets/images/avatar-jessica.jpeg";
-import Button from "../button/Button";
-import "./SocialLinks.scss";
+import SocialLinkButton from "../social-link-button/SocialLinkButton";
+import classNames from "./SocialLinks.module.scss";
 
 function SocialLinks() {
   const socialLinks = [
@@ -12,17 +12,17 @@ function SocialLinks() {
   ];
 
   return (
-    <div id="social-links">
-      <img src={avatar} alt="avatar" width={88} />
-      <div>
-        <h1>Jessica Randall</h1>
-        <h2>London, United Kingdom</h2>
+    <div className={classNames.socialLinks}>
+      <img src={avatar} alt="avatar" className={classNames.avatarImage} />
+      <div className={classNames.headlines}>
+        <h1 className={classNames.headline1}>Jessica Randall</h1>
+        <h2 className={classNames.headline2}>London, United Kingdom</h2>
       </div>
-      <q>Front-end developer and avid reader.</q>
-      <ul id="social-links-list">
+      <q className={classNames.quote}>Front-end developer and avid reader.</q>
+      <ul className={classNames.socialLinksList}>
         {socialLinks.map((link) => (
           <li key={link}>
-            <Button socialLink={link} />
+            <SocialLinkButton socialLink={link} />
           </li>
         ))}
       </ul>
