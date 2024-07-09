@@ -1,42 +1,43 @@
-@use "../../styles/colors" as c;
+@use "../../styles/colors" as *;
 
-#social-links {
+.social-links {
   text-align: center;
-  background-color: c.$color-dark-grey;
+  background-color: $color-dark-grey;
   border-radius: 10px;
   padding: 40px 20px;
   line-height: 1;
 
-  img {
+  .avatar-image {
     border-radius: 100%;
+    width: 88px;
   }
 
-  div {
+  .headlines {
     margin: 10px;
   }
 
-  h1 {
+  .headline-1 {
     margin: 0;
     padding: 5px;
-    color: c.$color-white;
+    color: $color-white;
     font-size: 1.3rem;
     font-weight: 500;
   }
 
-  h2 {
+  .headline-2 {
     margin: 0;
     padding: 5px;
-    color: c.$color-primary;
+    color: $color-primary;
     font-size: 0.7rem;
     font-weight: 500;
   }
 
-  q {
+  .quote {
     font-size: 10px;
   }
 }
 
-#social-links-list {
+.social-links-list {
   margin: 20px 10px 0 10px;
   padding: 0;
   list-style: none;

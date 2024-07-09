@@ -1,4 +1,4 @@
-@use "styles/colors" as c;
+@use "styles/colors" as *;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -6,8 +6,8 @@
   font-weight: 400;
   font-size: 14px;
 
-  color: c.$color-white;
-  background-color: c.$color-off-black;
+  color: $color-white;
+  background-color: $color-off-black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
