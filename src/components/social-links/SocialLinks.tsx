@@ -2,7 +2,7 @@ import avatar from "../../assets/images/avatar-jessica.jpeg";
 import SocialLinkButton from "../social-link-button/SocialLinkButton";
 import classNames from "./SocialLinks.module.scss";
 
-function SocialLinks() {
+const SocialLinks = () => {
   const socialLinks = [
     "GitHub",
     "Frontend Mentor",
@@ -28,6 +28,6 @@ function SocialLinks() {
       </ul>
     </div>
   );
-}
+};
 
 export default SocialLinks;
